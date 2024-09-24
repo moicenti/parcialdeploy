@@ -1,0 +1,89 @@
+
+/*Estilo general para el header*/
+header {
+    margin: 0;
+    color: #FFFFFF;
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    padding-left: 2%;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    top: 0;
+
+}
+/*Estilo para el fondo de la pagina, el color general y la fuente de la pagina
+Se utiliza una sola fuente ya que es la oficial de microsoft*/
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-position: fixed;
+    background-image: url(/Resources/background.png);
+    background-size: contain;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    
+
+}
+/*
+EL estilo del navegador para tener espacio entre cada texto
+*/
+nav{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+/*Quita la decoracion de lso hipervinculos y los muestra como texto normal*/
+a{
+
+text-decoration: none;
+color: #FFFFFF;
+font-weight: 300;
+transition: 0.5s color ease-in;
+
+}
+/*Se añade peso al titulo*/
+h1{
+
+    font-weight: 600;
+
+}
+/*Un color para resaltar en general durante toda la web*/
+strong{
+    font-weight: 300;
+color: #107c10;
+
+}
+/*Efecto hover a los hypervinculos*/
+a:hover{
+
+    color:#2ca243;
+
+}
+/*Efecto de color y tamaño para las blockquote*/
+blockquote{
+
+color: white;
+max-width: 45%;
+
+}
+/*COlor y peso de los subtitulos*/
+h2{
+
+color: #107c10;
+font-weight: 5000;
+
+
+}
+
+
+
+

@@ -1,0 +1,201 @@
+/*inicia bloque dado por chatgpt*/
+
+
+/*Se ocultan los inputs del tipo radio*/
+input[type="radio"] {
+    display: none;
+}
+/* EStilo general del contenedor de todas las slides*/
+.comunity-slide {
+
+    max-width: 100%;
+    height: 400px;
+    background-color: black;
+    margin: 2%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 2%;
+
+}
+
+
+/*EStilo general de cada slide de forma que se vea ordenada*/
+.slides {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #107c10;
+     
+}
+/*MAs opciones para cada una de las slides*/
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease-in-out, visibility 0s 0.8s;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center; 
+    justify-content: center;
+
+}
+/*EStilo para las imagenes dentro de las slides*/
+.slide img {
+    width: auto;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+    margin-right: 5%;
+}
+
+/* Mostrar solo la imagen activa */
+#slide1:checked~.slides .slide-1,
+#slide2:checked~.slides .slide-2,
+#slide3:checked~.slides .slide-3,
+#slide4:checked~.slides .slide-4{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.8s ease-in-out;
+}
+
+/* Indicadores para las imágenes */
+.carousel-nav {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+/*los labels dentro del navegador y se les asigna un estilo*/
+.carousel-nav label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Estilo para el estado activo */
+#slide1:checked~.carousel-nav label[for="slide1"],
+#slide2:checked~.carousel-nav label[for="slide2"],
+#slide3:checked~.carousel-nav label[for="slide3"],
+#slide4:checked~.carousel-nav label[for="slide4"] {
+    background: #333;
+}
+
+/*OpenAI. (2024). ChatGPT (versión GPT-4). https://chat.openai.com/ termina bloque de codigo por chatgpt*/
+
+
+@media screen and (max-width: 768px) {
+
+    .carousel-nav label {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ffffff;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .slide img {
+        width: auto;
+        height: 70%;
+        object-fit: fill;
+        border-radius: 10px;
+    
+    }
+
+    .slide {
+
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.8s ease-in-out, visibility 0s 0.8s;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 75%; 
+    
+    }
+    .comunity-slide {
+
+        max-width: 100%;
+        height: 300px;
+        background-color: black;
+        margin: 2%;
+        position: relative;
+        box-sizing: border-box;
+        
+    
+    }
+    
+    
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .carousel-nav label {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ffffff;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .slide img {
+        width: auto;
+        height: 50%;
+        object-fit: fill;
+        border-radius: 10px;
+    
+    }
+
+    .slide {
+
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.8s ease-in-out, visibility 0s 0.8s;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 75%; 
+    
+    }
+    .comunity-slide {
+
+        max-width: 100%;
+        height: 300px;
+        background-color: black;
+        margin: 2%;
+        position: relative;
+        box-sizing: border-box;
+        
+    
+    }
+    
+    
+
+}

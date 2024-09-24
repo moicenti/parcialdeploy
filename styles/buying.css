@@ -1,0 +1,90 @@
+/*Bloque de estilo para la ultima plataforma, de tal manera que 
+se vea ordenada con el documento general y su contenido*/
+.buying-plataform {
+
+    height: 400px;
+    max-width: 100%;
+    background-color: wheat;
+    display: flex;
+    gap: 10%;
+    padding: 5%;
+    align-items: center;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+
+
+}
+
+/*El bionoton de compra se le pone su estilo y se agrega una transis*/
+.buy {
+    background-color: #107c10;
+    color: white;
+    height: 60px;
+    width: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+/*Efecto de sombras y traslado para el boton al posar el click sobre el*/
+.buy:hover {
+
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px black;
+    background-color: #2ca243;
+    color: black;
+    font-weight: 800;
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .buying-plataform {
+
+        height: 300px;
+        max-width: 100%;
+        background-color: wheat;
+        display: flex;
+        gap: 10%;
+        padding: 5%;
+        align-items: center;
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 80%;
+    
+    
+    }
+
+
+}
+
+@media screen and (max-width: 60) {
+
+    .buying-plataform {
+
+        height: 275px;
+        max-width: 100%;
+        background-color: wheat;
+        display: flex;
+        gap: 10%;
+        padding: 5%;
+        align-items: center;
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 65%;
+    
+    
+    }
+
+
+}
